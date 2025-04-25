@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Matjhabeng Community - gallery</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/modules/gallery.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo">Ul<span>team</span>ate</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="dances.html" class="dropbtn">Dances</a>
+                    <ul class="dropdown-content">
+                        <li><a href="contemporary.html">Contemporary</a></li>
+                        <li><a href="">Traditional</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html" class="l-active">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa fa-bars"></i>
+            </div>
+        </nav>
+
+        <div class="main-container">
+            <h2 id="g-header">Gallery</h2>
+            <p style="margin-bottom: 30px;">Explore a vibrant collection of photos and videos showcasing the beauty, passion,<br> and movement of Matjhabeng's dance culture. From traditional steps to modern flair,<br> every image tells a story of rhythm, identity, and celebration</p>
+
+            <div class="gallery-content-container">
+                <h2 style=" margin-bottom: -30px; font-size: large;">Featured Videos</h2>
+                <div class="videos-container" >
+                    <div class="card amapiano" style="background-image: url(https://amapianoparty.ng/images/img21.jpg);",>
+                        <div class="overlay">
+                            <div>
+                                <p>Amapiano Dnace</p>
+                                <h2>A Glimpse of the Amapiano Dance</h2>
+                            </div>
+                            <div class="icon" onclick="playVideo('amapiano')">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <video id="amapiano-video" class="video" src="./assets/videos/amapiano.mp4" style="display: none;" controls></video>
+                    </div>
+                    <div class="card amapiano" style="background-image: url(./assets/images/amapiano1.jpg);">
+                        <div class="overlay">
+                            <div>
+                                <p>Amapiano Dnace</p>
+                                <h2>A Glimpse of the Amapiano Dance</h2>
+                            </div>
+                            <div class="icon" onclick="playVideo('amapiano1')">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card amapiano" style="background-image: url(https://amapianoparty.ng/images/img21.jpg);">
+                        <div class="overlay">
+                            <div>
+                                <p>Amapiano Dnace</p>
+                                <h2>A Glimpse of the Amapiano Dance</h2>
+                            </div>
+                            <div class="icon" onclick="playVideo('amapiano2')">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card amapiano" style="background-image: url(https://amapianoparty.ng/images/img21.jpg);">
+                        <div class="overlay">
+                            <div>
+                                <p>Amapiano Dnace</p>
+                                <h2>A Glimpse of the Amapiano Dance</h2>
+                            </div>
+                            <div class="icon" onclick="playVideo('amapiano3')">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mokhibo" style="background-image: url(https://lecsakereke.wordpress.com/wp-content/uploads/2015/04/mokhibo-800x447.jpg);">
+                        <div class="overlay">
+                            <div>
+                                <p>Mokhibo Dnace</p>
+                                <h2>A Glimpse of the mokhibo Dance</h2>
+                            </div>
+                            <div class="icon" onclick="playVideo('mokhibo')">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mokhibo" style="background-image: url(https://lecsakereke.wordpress.com/wp-content/uploads/2015/04/mokhibo-800x447.jpg);">
+                        <div class="overlay">
+                            <div>
+                                <p>Mokhibo Dnace</p>
+                                <h2>A Glimpse of the mokhibo Dance</h2>
+                            </div>
+                            <div class="icon" onclick="playVideo('mokhibo2')">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <video id="amapiano-video" class="video" src="./assets/videos/mokhibo2.mp4" style="display: none;" controls></video>
+                    </div>
+                    <div class="card mokhibo" style="background-image: url(https://lecsakereke.wordpress.com/wp-content/uploads/2015/04/mokhibo-800x447.jpg);">
+                        <div class="overlay">
+                            <div>
+                                <p>Mokhibo Dnace</p>
+                                <h2>A Glimpse of the mokhibo Dance</h2>
+                            </div>
+                            <div class="icon" onclick="playVideo('mokhibo3')">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <video id="amapiano-video" class="video" src="./assets/videos/mokhibo3.mp4" style="display: none;" controls></video>
+                    </div>
+                    <div class="card mokhibo" style="background-image: url(https://lecsakereke.wordpress.com/wp-content/uploads/2015/04/mokhibo-800x447.jpg);">
+                        <div class="overlay">
+                            <div>
+                                <p>Mokhibo Dance</p>
+                                <h2>A Glimpse of the mokhibo Dance</h2>
+                            </div>
+                            <div class="icon" onclick="playVideo('mokhibo4')">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <video id="mokhibo-video" class="video" src="./assets/videos/mokhibo.mp4" style="display: none;" controls></video>
+                    </div>
+                    
+                    <div class="card pantsula" style="background-image: url(https://img.redbull.com/images/c_limit,w_1500,h_1000/f_auto,q_auto/redbullcom/2018/07/18/05a79788-fbb4-478c-a658-c176c003e9da/pantsula);">
+                        <div class="overlay">
+                            <div>
+                                <p>pantsula Dnace</p>
+                                <h2>A Glimpse of the pantsula Dance</h2>
+                            </div>
+                            <div class="icon" onclick="playVideo('pantsula1')">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card pantsula" style="background-image: url(https://img.redbull.com/images/c_limit,w_1500,h_1000/f_auto,q_auto/redbullcom/2018/07/18/05a79788-fbb4-478c-a658-c176c003e9da/pantsula);">
+                        <div class="overlay">
+                            <div>
+                                <p>pantsula Dnace</p>
+                                <h2>A Glimpse of the pantsula Dance</h2>
+                            </div>
+                            <div class="icon" onclick="playVideo('pantsula2')">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card pantsula" style="background-image: url(https://img.redbull.com/images/c_limit,w_1500,h_1000/f_auto,q_auto/redbullcom/2018/07/18/05a79788-fbb4-478c-a658-c176c003e9da/pantsula);">
+                        <div class="overlay">
+                            <div>
+                                <p>pantsula Dnace</p>
+                                <h2>A Glimpse of the pantsula Dance</h2>
+                            </div>
+                            <div class="icon" onclick="playVideo('pantsula3')">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card pantsula" style="background-image: url(https://img.redbull.com/images/c_limit,w_1500,h_1000/f_auto,q_auto/redbullcom/2018/07/18/05a79788-fbb4-478c-a658-c176c003e9da/pantsula);">
+                        <div class="overlay">
+                            <div>
+                                <p>pantsula Dnace</p>
+                                <h2>A Glimpse of the pantsula Dance</h2>
+                            </div>
+                            <div class="icon" onclick="playVideo('pantsula4')">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="video-modal" class="video-modal" style="display: none;" onclick="closeVideoModal(event)">
+                    <video id="video-modal-content" class="video-modal-content" controls>
+                        <source id="video-source" src="" type="video/mp4">
+                    </video>
+                </div>
+                <h2 style=" margin-bottom: -30px; font-size: large;">Featured Images</h2>
+                <div class="image-container">
+                    <div class="image-card">
+                        <div class="image-header" style="background-image: url(./assets/images/amapiano.jpg);"></div>
+                        <p class="desc">Amapiano dancers moving gracefully to the beats of South Africa’s signature sound, incorporating smooth footwork and expressive body movements</p>
+                        <p>Amapiano Dance</p>
+                    </div>
+                    <div class="image-card">
+                        <div class="image-header" style="background-image: url(./assets/images/pantsula1.jpg);"></div>
+                        <p class="desc">A group of energetic Pantsula dancers in vibrant streetwear, showcasing powerful, rhythmic movements with an infectious energy.</p>
+                        <p>Pantsula</p>
+                    </div>
+                    <div class="image-card">
+                        <div class="image-header" style="background-image: url(./assets/images/mokhibo.jpg);"></div>
+                        <p class="desc">Mokhibo dancers in traditional attire, performing with intensity and precision, celebrating their cultural heritage through dance.</p>
+                        <p>Mokhibo</p>
+                    </div>
+                    <div class="image-card">
+                        <div class="image-header" style="background-image: url(./assets/images/pantsula.jpg);"></div>
+                        <p class="desc">Pantsula dancers expressing dynamic footwork and sharp movements, blending traditional South African style with modern urban flair.</p>
+                        <p>Pantsula</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <footer>
+            <a href="https://cut.ac.za"><img src="https://cms.cut.ac.za/Files/Froala/79a42300-c021-4a2a-8f45-2551a8cccff9.png" alt="CUT logo" width="50"></a>
+            <p>&copy;<span id="current-year"></span> Ulteamate. All Rights Reserved</p>
+        </footer>
+        <script src="./js/script.js" async defer></script>
+    </body>
+</html>

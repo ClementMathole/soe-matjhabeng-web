@@ -1,0 +1,238 @@
+h2{
+    color: black;
+    font-weight: 500;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50vh;
+    background-color: aquamarine;
+    padding: 0 70px;
+    color: #FFFFFF;
+    background-position: center;
+    background-size: cover;
+    background-image: url('https://news.cgtn.com/news/2023-08-16/Amapiano-dance-moves-bring-South-African-sway-to-China-1mjDAfzZfoc/img/c5d18354e1cb421e87b935f22617cd23/c5d18354e1cb421e87b935f22617cd23.png');
+    border-radius: 8px;
+    text-align: center;
+    margin: 0 70px;
+    padding: 0 20px;
+}
+.banner button{
+    border: 0;
+    background-color: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.banner button:hover{ color: grey; }
+.banner i{
+    color: #FFFFFF;
+    font-size: 30px;
+}
+.banner i:hover{ color: grey; }
+.main-container{
+    padding: 50px 0;
+}
+
+.content{
+    padding: 20px 0;
+    background-color: #FFFFFF;
+    margin-top: 30px;
+}
+.page-content{ display: none; }
+.page-content.active{ display: block; }
+.content-section{ padding: 0 70px; }
+.dance-main-content {padding: 0 20px;}
+.dances-sidebar{ 
+    padding: 10px;
+    min-width: 200px;
+    margin-top: -15px;
+}
+.dances-sidebar a{
+    text-decoration:  none;
+    margin-bottom: 100px;
+    color: grey;
+}
+.dances-sidebar a:hover{ color: black; }
+.s-active{color: black;}
+hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #a0a0a042;
+}
+.key-elements ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.key-elements ul li{
+    list-style: none;
+    display: flex;
+}
+.key-elements ul li p{
+    margin-left: 10px;
+    margin-top: 0;
+}
+
+.content-section{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.card-container{
+    margin-left: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+.content-section .card{
+    width: 400px;
+    height: fit-content;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgb(0, 0 , 0 , 0.1);
+    border-radius: 8px;
+}
+.card .video-thumnail-amapiano, .video-thumnail-mokhibo, .video-thumnail-pantsula{
+    width: 100%;
+    height: 250px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.video-thumnail-amapiano i, .video-thumnail-mokhibo i, .video-thumnail-pantsula i{
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.685);
+    box-shadow: 0 4px 8px rgb(0, 0 , 0 , 0.1);
+}
+.video-thumnail-amapiano i:hover, .video-thumnail-mokhibo i:hover, .video-thumnail-pantsula i:hover{
+    background-color: grey;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.video-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+}
+.video-modal-content {
+    position: relative;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.modal-instruction {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.video-modal-content video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+
+.card button{
+    background: linear-gradient(to right, rgb(218, 82, 255), rgba(132, 0, 255, 0.918));
+    color: #FFFFFF;
+    padding: 8px 20px;
+    border: 0;
+    width: 80%;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.card button:hover{
+    background: linear-gradient(to right,  rgb(240, 215, 247), rgba(132, 0, 255, 0.205));
+}
+/*.video-thumnail i{
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    background-color: #FFFFFF;
+}*/
+.query-card{
+    background: linear-gradient(to bottom right, rgb(218, 82, 255), rgba(132, 0, 255, 0.918));
+    color: #FFFFFF;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgb(0, 0 , 0 , 0.1);
+    border-radius: 8px;
+}
+.query-card h2 { color: #FFFFFF; }
+.query-card p, .query-card i{color: #FFFFFF;}
+.dance-conclution-card{
+    box-shadow: 0 4px 8px rgb(0, 0 , 0 , 0.1);
+    margin-top: 20px;
+    border-radius: 8px;
+}
+.conclusion-header{
+    background-color: rgb(184, 71, 236);
+    color: #FFFFFF;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.dance-conclution-card h4{padding: 10px;}
+.dance-conclution-card p, .dance-info{
+    padding: 20px;
+}
+.dance-info, .query-card{ text-align: start; }
+.query-card ul, .dance-info ul{ margin-left: -40px; }
+.dance-info ul li, .query-card ul li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding:0 10px;
+}
+.dance-info ul li p, .query-card ul li p{ margin-left: 10px; }
+
+@media (max-width: 768px) {
+    .banner{ margin:0 30px; }
+    .content-section{ padding: 0 30px; flex-wrap: wrap}
+    .card-container{
+        margin-left: 0;
+    }
+    .content-section .card { width: 100%; }
+    .dance-main-content {padding: 0;}
+    .video-modal-content {
+        width: 95%;
+        max-width: none;
+        height: auto;
+    }
+
+    .video-modal-content video {
+        width: 100%;
+        height: auto;
+    }
+    .dances-sidebar { display: none; }
+}

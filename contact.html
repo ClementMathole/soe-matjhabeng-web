@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Matjhabeng Community - contact us</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/modules/contact.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo">Ul<span>team</span>ate</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="dances.html" class="dropbtn">Dances</a>
+                    <ul class="dropdown-content">
+                        <li><a href="contemporary.html">Contemporary</a></li>
+                        <li><a href="">Traditional</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="l-active">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa fa-bars"></i>
+            </div>
+        </nav>
+
+        <div class="main-content">
+            <div class="hero-sec">
+                <div>
+                    <h2>Contact our friendly team</h2>
+                    <p>Whether you have a question, or simply share your thought.</p>
+                </div>
+            </div>
+            <div class="contact-info">
+                <div class="fn-us-her">
+                    <h2>Find us here</h2>
+                    <p style="margin-top: -15px;">You can reach us through any of the details below.</p>
+                    <div class="fn-info">
+                        <i class="fa fa-location-arrow"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>1 Mothusi Road, Central University of Technology, Welkom</p>
+                        </div>
+                    </div>
+                    <div class="fn-info">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>(+27) 70 123 0005</p>
+                        </div>
+                    </div>
+                    <div class="fn-info">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>Ulteamate@info.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-us">
+                    <h2>Contact Us</h2>
+                    <p>Send us a message firectly, or question about our research</p>
+                    <form id="contactForm" onsubmit="showPopup(event)">
+                        <input type="text" id="name" placeholder="Name" required/>
+                        <input type="email" id="email" placeholder="Email" required/><br>
+                        <input type="text" id="subject" placeholder="Subject" required/><br>
+                        <input type="text" id="message" placeholder="Message" required/>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div id="popup" class="popup">
+                    <div class="popup-content">
+                        <i class="fas fa-check"></i>
+                        <h2>Thank You</h2>
+                        <h3 id="popupMessage"></h3>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.366847479679!2d26.783097!3d-27.949263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e951f5b2b4b9c3f%3A0x7c3c7c7c7c7c7c7c!2sCentral%20University%20of%20Technology%2C%20Welkom%20Campus!5e0!3m2!1sen!2sza!4v1614311234567!5m2!1sen!2sza" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+
+            <div class="cta">
+                <p>OR</p>
+                <h2>Send a Quick Mail</h2>
+                <p style="margin-top: -15px;">We're here to answer your questions and her your thoughts!</p>
+                <button onclick="window.location.href='mailto:ulteamate@gmail.com'">Send Us a Mail</button>
+            </div>
+
+        </div>
+
+        <footer>
+            <a href="https://cut.ac.za"><img src="https://cms.cut.ac.za/Files/Froala/79a42300-c021-4a2a-8f45-2551a8cccff9.png" alt="CUT logo" width="50"></a>
+            <p>&copy;<span id="current-year"></span> Ulteamate. All Rights Reserved</p>
+        </footer>
+        <script src="./js/script.js"></script>
+    </body>
+</html>

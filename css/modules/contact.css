@@ -1,0 +1,109 @@
+h2, h3 { font-weight: 500; }
+.hero-sec{
+    height: 30vh;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://img.freepik.com/premium-photo/headset-customer-support-equipment-call-center-ready-actively-service-communication-support-call-center-customer-service-help-deskfor-call-center-concept_545612-959.jpg?semt=ais_hybrid&w=740');
+}
+.hero-sec h2{
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.hero-sec p{ margin-top: 5px; }
+
+.contact-info {
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    padding: 30px;
+    background-color: #FFFFFF;
+}
+.fn-info {
+    display: flex;
+    align-items: center;
+}
+.fn-info div { margin-left: 20px; }
+.fn-info div p{ margin-top: -15px; }
+#subject, #message, #name, #email {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background-color: #c5c0c044;
+    outline-color: blueviolet;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+}
+#message{
+    height: 100px;
+}
+.contact-us button, .cta button{
+    background: linear-gradient(to right, rgb(218, 82, 255), rgba(132, 0, 255, 0.918));
+    color: #FFFFFF;
+    padding: 8px 20px;
+    border: 0;
+    margin: 20px 0;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.contact-us button:hover, .cta button:hover { background: linear-gradient(to right,  rgb(240, 215, 247), rgba(132, 0, 255, 0.205)); }
+.contact-us p{ margin-top: -15px; }
+
+/* Popup styling */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+}
+.popup-content i {
+    font-size: 50px;
+}
+#popupMessage {
+    font-size: 14px;;
+    color: #b8b8b8b4;
+}
+
+
+.map-container{
+    padding:30px px;
+    background-color: #FFFFFF;
+}
+.map-container iframe{ border-radius: 8px; }
+
+.cta {
+    text-align: center;
+    padding: 30px;
+    background-color: #FFFFFF;
+}
+
+
+@media (max-width: 768px) {
+    .hero-sec{ padding: 30px; }
+    .contact-info{
+        padding: 30px;
+        flex-wrap: wrap;
+    }
+    .map-container{ padding: 30px; }
+    .contact-us input{
+        width: 50%;
+    }
+}

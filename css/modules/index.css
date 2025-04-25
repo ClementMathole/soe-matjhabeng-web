@@ -1,0 +1,200 @@
+.wlc-text{ text-align: center; }
+h2 {
+    font-weight: 500;
+    color: #131415;
+    margin-bottom: 5px;
+}
+#featured-dances{padding: 2rem;}
+.wlc-text {padding: 20px 70px }
+.dance-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+.dance-card {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    width:300px;
+    height: 300px;
+    margin: 5px;
+    background-position: center;
+    background-size: cover;
+    transition-duration: 0.1s;
+
+}
+.dance-card:hover{
+    opacity: 0.8;
+}
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    color:  #FFFFFF;
+    background: linear-gradient(to bottom, #ffffff00, rgba(137, 43, 226, 0.24));
+    padding: 20px;
+}
+
+.card-content h2{
+    margin: 0;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.locate-btn {
+    background-color: transparent;
+    border: 2px solid rgba(211, 211, 211, 0.301);
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    color: #FFFFFF;
+    transition-duration: 0.5s;
+}
+.locate-btn:hover {
+    background-color: rgba(211, 211, 211, 0.301);
+    color: #FFFFFF;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.amapiano{
+    background-image: url('https://news.cgtn.com/news/2023-08-16/Amapiano-dance-moves-bring-South-African-sway-to-China-1mjDAfzZfoc/img/c5d18354e1cb421e87b935f22617cd23/c5d18354e1cb421e87b935f22617cd23.png');
+}
+.gumboots{
+    background-image: url('https://live.staticflickr.com/30/61682638_da21ff4ca8_z.jpg');
+}
+.pantsula{
+    background-image: url('https://i.ytimg.com/vi/UT0k1LxGRO8/maxresdefault.jpg');
+}
+.mokhibo {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Singing-for-Mokhibo-Lesotho.jpg/1200px-Singing-for-Mokhibo-Lesotho.jpg')
+}
+
+#page-footer {
+    text-align: right;
+    padding: 0 0px;
+}
+#page-footer p{
+    font-weight: 600;
+    font-size: 14px;
+}
+#page-footer p a{
+    text-decoration: none;
+    color: #48566679;
+}
+
+#intro{
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0 70px;
+    background-color: #FFFFFF;
+    text-align: left;
+}
+#intro h2 {
+    color: #131415;
+}
+#intro div{ padding: 20px 0; }
+
+.flex-container{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.timeline-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.header{ margin-bottom: 2rem; }
+.header p{
+    color: blueviolet;
+}
+.header h1{
+    color: #131415;
+    
+}
+.timeline{
+    position: relative;
+    padding-left: 3rem;
+}
+.timeline::before{
+    content: '';
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #e5e7eb;
+}
+.timeline-item{
+    display: flex;
+    align-items: start;
+    margin-bottom: 2rem;
+}
+.timeline-item:last-child{ margin-bottom: 0; }
+.timeline-icon i{
+    background-color: blueviolet;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    border-radius: 50px;
+}
+.timeline-content{
+    margin-left: 1rem;
+    margin-top: -10px;
+}
+.timeline-content h2{
+    font-size: 1.125rem;
+    color: #131415;
+}
+
+.cta{
+    text-align: center;
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+.cta-btn{
+    background: linear-gradient(to right, rgb(218, 82, 255), rgba(132, 0, 255, 0.918));
+    color: #FFFFFF;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.cta button:hover{ background: linear-gradient(to right,  rgb(240, 215, 247), rgba(132, 0, 255, 0.205)); }
+
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    #home{ 
+        height: auto;
+        width: auto;
+    }
+    .wlc-text, #intro{padding: 0 30px;}
+    #featured-dances{padding: 1rem;}
+    #intro br, cta br{ display: none}
+    #intro{
+        justify-content: start;
+        flex-wrap: wrap;
+        padding: 0 30px;
+    }
+    #intro div{ padding: 0; }
+    .timeline{ padding-left: 0rem; }
+    .timeline-item{margin-left: 10px;}
+    .timeline-icon{
+        display: block;
+    }
+    .timeline::before{ margin-left: -20px; }
+    .flex-container{display: block;}
+}
